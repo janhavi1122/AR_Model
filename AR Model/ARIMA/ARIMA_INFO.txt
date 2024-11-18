@@ -1,0 +1,13 @@
+This code performs time series forecasting using the ARIMA model on Walmart footfall data. It begins by importing the necessary libraries and reading the dataset. The data is split into training (first 147 entries) and testing (last 12 entries) sets. The ACF (Auto-Correlation Function) and PACF (Partial Auto-Correlation Function) plots are used to determine the parameters 
+ 
+p, 
+ 
+d, and 
+ 
+q for the ARIMA model. A model is created with these parameters and fitted to the training data. Predictions are made for the testing period, and the root mean squared error (RMSE) is calculated to evaluate model performance. Finally, the forecasts are plotted against actual test data. The script also sets up the usage of Auto ARIMA (a library to automatically find the best 
+ 
+,
+ 
+,
+ 
+p,d,q values) but does not proceed with its implementation.
